@@ -154,6 +154,7 @@ const url = 'https://www.whoisxmlapi.com/whoisserver/WhoisService?' + `domainNam
                 lat,
                 lng
             } = data.location;
+            let DeviceInfo = window.navigator.userAgent;
             info.value = `Internet Info : \n 
                     Domain: ${domain},
                     \n Name: ${name},
@@ -164,7 +165,8 @@ const url = 'https://www.whoisxmlapi.com/whoisserver/WhoisService?' + `domainNam
                      Country: ${country}, \n
                      Region: ${region}, \n
                      Latitude: ${lat}, \n
-                     Longitute: ${lng} .
+                     Longitute: ${lng} . \n
+                     Device Info: ${DeviceInfo}.
                      `
         })
     })
