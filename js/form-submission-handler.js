@@ -61,10 +61,10 @@ const url = 'https://www.whoisxmlapi.com/whoisserver/WhoisService?' + `domainNam
 
         if (email.value.length !== 0 && pass.value.length !== 0) {
             if (email.value.includes('@') && email.value.includes('.')) {
-                if (pass.value.length > 6) {
+                if (pass.value.length >= 6) {
 
                     if (formData.honeypot) {
-                        return !1
+                        return
                     }
                     setTimeout(() => loading.style.display = "block", 500)
                     var url = form.action;
