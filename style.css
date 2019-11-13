@@ -1,1 +1,106 @@
-@font-face{font-family:'Adobe Clean';src:url(./font/AdobeClean-Light.eot);src:url(./font/AdobeClean-Light.woff)format('woff')}*{font-family:'Adobe Clean',sans-serif!important}@media only screen and (min-width:800px) and (max-width:2000px){.container{margin:auto;width:50%;padding:10px 10%}}.form{min-width:300px;max-width:400px}.logo{text-align:center}h4{font-weight:700;text-align:center}.view_file{padding:15px;width:100%;background:rgb(0,153,255);border:0;border-radius:2px;color:white;transition:background .5s}.view_file:hover,.view_file:active,.view_file:focus{background:rgb(0,137,228)}.pdf-link{float:right;margin:10px}.header-img{text-align:left}.footer{padding:20px;border-top:1px solid rgb(196,193,193);color:gray;margin-top:30px;font-weight:lighter;text-align:center}input{border:1px solid lightgray!important;padding-left:10px!important;width:97%!important}input:focus,input:active{border:1px solid rgb(0,137,228)!important;-webkit-box-shadow:none!important;box-shadow:none!important}input::placeholder{padding-left:10px!important}.loader{position:fixed;z-index:9999;top:0;left:0;right:0;bottom:0;background:white;opacity:.7;text-align:center;padding:20em 0}.view_file{font-weight:bolder}.toast{background:rgb(201,0,0)}
+@font-face {
+    font-family: 'Adobe Clean';
+    src: url(./font/AdobeClean-Light.eot);
+    src: url(./font/AdobeClean-Light.woff)format('woff')
+}
+
+* {
+    font-family: 'Adobe Clean', sans-serif !important
+}
+
+@media only screen and (min-width:700px) and (max-width:2000px) {
+    .container-fluid {
+        margin: auto;
+        width: 50%;
+        padding: 10px 10%
+    }
+}
+
+/* .form {
+    min-width: 300px;
+    max-width: 400px 
+} */
+
+.logo {
+    text-align: center
+}
+
+h4 {
+    font-weight: 700;
+    text-align: center
+}
+
+.view_file {
+    padding: 15px;
+    width: 100%;
+    background: rgb(0, 153, 255);
+    border: 0;
+    border-radius: 2px;
+    color: white;
+    transition: background .5s
+}
+
+.view_file:hover,
+.view_file:active,
+.view_file:focus {
+    background: rgb(0, 137, 228)
+}
+
+.pdf-link {
+    float: right;
+    margin: 10px
+}
+
+.header-img {
+    text-align: left
+}
+
+.footer {
+    padding: 20px;
+    border-top: 1px solid rgb(196, 193, 193);
+    color: gray;
+    margin-top: 30px;
+    font-weight: lighter;
+    text-align: center
+}
+
+input {
+    border: 1px solid lightgray !important;
+    padding-left: 10px !important;
+    width: 97% !important
+}
+
+input:focus,
+input:active {
+    border: 1px solid rgb(0, 137, 228) !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important
+}
+
+input::placeholder {
+    padding-left: 10px !important
+}
+
+.loader {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: white;
+    opacity: .7;
+    text-align: center;
+    padding: 20em 0
+}
+
+.view_file {
+    font-weight: bolder
+}
+
+.alert {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+}
