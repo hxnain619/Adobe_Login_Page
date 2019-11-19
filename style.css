@@ -11,19 +11,11 @@
 @media only screen and (min-width:700px) and (max-width:2000px) {
     .container-fluid {
         margin: auto;
-        width: 50%;
-        padding: 10px 10%
+        width: 35%;
+        padding: 5px 40px;
     }
 }
 
-/* .form {
-    min-width: 300px;
-    max-width: 400px 
-} */
-
-.logo {
-    text-align: center
-}
 
 h4 {
     font-weight: 700;
@@ -31,23 +23,29 @@ h4 {
 }
 
 .view_file {
-    padding: 15px;
+    padding: 10px;
     width: 100%;
-    background: rgb(0, 153, 255);
+    background: #1473e6;
     border: 0;
     border-radius: 2px;
     color: white;
     transition: background .5s
 }
 
+img {
+    vertical-align: top;
+}
+
 .view_file:hover,
 .view_file:active,
 .view_file:focus {
-    background: rgb(0, 137, 228)
+    background: #1c82ff
 }
 
+p {
+    font-size: 14px;
+}
 .pdf-link {
-    float: right;
     margin: 10px
 }
 
@@ -65,20 +63,26 @@ h4 {
 }
 
 input {
-    border: 1px solid lightgray !important;
+    border: none !important;
     padding-left: 10px !important;
-    width: 97% !important
+    width: 97% !important;
+    border-bottom: 1px solid lightgray !important;
+    border-radius: 0 !important;
+
 }
 
 input:focus,
 input:active {
-    border: 1px solid rgb(0, 137, 228) !important;
+    border-bottom: 1px solid rgb(0, 137, 228) !important;
     -webkit-box-shadow: none !important;
-    box-shadow: none !important
+    box-shadow: none !important;
+    font-size: 13px !important;
 }
 
 input::placeholder {
-    padding-left: 10px !important
+    padding-left: 10px !important;
+    font-style: italic;
+    font-size: 13px !important;
 }
 
 .loader {
@@ -103,4 +107,61 @@ input::placeholder {
     top: 0;
     right: 0;
     z-index: 9999;
+}
+
+.sm-logo {
+    display: inline-flex;
+    flex-wrap: wrap;
+    color: grey;
+}
+
+.apple-btn,
+.fb-btn,
+.google-btn {
+    border-radius: 50px;
+    padding: 15px 20px;
+    width: 100%;
+    margin: 5px;
+}
+
+.apple-btn {
+    background: black;
+    color: white;
+}
+
+.fb-btn {
+    background: #3f5d94;
+    color: white;
+}
+
+.google-btn {
+    background-color: white;
+    color: grey;
+}
+
+.seperator {
+    background-color: #fff;
+    color: #505050;
+    display: inline-block;
+    font-size: 14px;
+    padding-right: 16px;
+    position: relative;
+}
+
+.seperator-Parent {
+    display: block;
+    min-height: 1px;
+    position: relative;
+    margin-top: 2px;
+
+}
+.seperator-Parent::before {
+    background-color: #eaeaea;
+    content: "";
+    display: block;
+    height: 1px;
+    margin-top: -1px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
 }
