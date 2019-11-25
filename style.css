@@ -23,12 +23,13 @@ h4 {
 }
 
 .view_file {
-    padding: 10px;
-    width: 100%;
+    width: 30%;
+    border-radius: 50px;
     background: #1473e6;
     border: 0;
-    border-radius: 2px;
     color: white;
+    font-family: sans-serif !important;
+    font-weight: 700;
     transition: background .5s
 }
 
@@ -110,9 +111,9 @@ input::placeholder {
 }
 
 .sm-logo {
-    display: inline-flex;
-    flex-wrap: wrap;
+    display: inline-block;
     color: grey;
+    width: 100%;
 }
 
 .apple-btn,
@@ -164,4 +165,56 @@ input::placeholder {
     position: absolute;
     top: 50%;
     width: 100%;
+}
+.logo > span {
+    font-size: 26px;
+}
+@media only screen and (min-width: 100px) and (max-width: 900px) {
+    .sm-logo {
+        text-align: right;
+    }
+    .header-img {
+        text-align: right;
+    }
+    .header-img > img {
+        height: 16px;
+        width: 20px;
+    }
+    .logo > img {
+        height: 18px;
+        width: 20px;
+    }
+    .logo > span {
+        font-size: 14px !important;
+    }
+    .head {
+        font-family: sans-serif !important;
+        font-weight: 600;
+        padding: 5px 0;
+        font-size: 13px !important;
+        color: #00000096;
+    }
+    .container-fluid {
+        padding: 20px 30px !important;
+    }
+    button {
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+        font-family: sans-serif !important;
+    }
+    .form-group {
+        margin-bottom: 0 !important;
+    }
+    .view_file {
+        padding: 0;
+        width: 25%;
+        font-size: 14px;
+        line-height: 10px;
+        height: 30px;
+        font-weight: 500;
+    }
+    .pdf-link {
+        font-size: 14px;
+    }
+
 }
